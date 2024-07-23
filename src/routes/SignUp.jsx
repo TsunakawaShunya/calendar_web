@@ -12,7 +12,7 @@ import {
 import { signUp } from "../lib/api/auth.js";
 import Cookies from "js-cookie";
 
-function SignUp() {
+const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
