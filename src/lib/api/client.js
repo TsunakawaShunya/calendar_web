@@ -2,14 +2,14 @@ import applyCaseMiddleware from "axios-case-converter";
 import axios from "axios";
 
 const options = {
-    ignoreHeaders: true,
-}
+  ignoreHeaders: true,
+};
 
 const client = applyCaseMiddleware(
-    axios.create({
-      baseURL: process.env.REACT_APP_API_DOMEIN,
-    }),
-    options
+  axios.create({
+    baseURL: import.meta.env.VITE_REACT_APP_API_DOMAIN,
+  }),
+  options
 );
-  
-export default client;
+
+export default client
