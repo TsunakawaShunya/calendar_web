@@ -13,7 +13,7 @@ import {
 import { signIn, getUser } from "./lib/api/auth.js"
 import Cookies from "js-cookie"
 
-function App() {
+const App = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
